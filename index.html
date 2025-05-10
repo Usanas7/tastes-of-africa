@@ -1,105 +1,107 @@
-<header>
-  <h1>Tastes of Africa</h1>
- <nav>
-  <ul style="list-style: none; display: flex; gap: 20px; padding: 0;">
-    <li><a href="index.html">Home</a></li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tastes of Africa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
 
-    <li style="position: relative;">
-  <a href="#">Recipes</a>
-  <ul>
-    <li><a href="recipes/jollof.html">Jollof</a></li>
-    <li><a href="recipes/ugali.html">Ugali</a></li>
-    <li><a href="recipes/mandazi.html">Mandazi</a></li>
-  </ul>
-</li>
+<body style="font-family: 'Roboto', sans-serif; line-height: 1.6; background-color: #fff; margin: 0; padding: 0;">
 
-
-    <li style="position: relative;">
-      <a href="#">Regions</a>
-      <ul>
-        <li><a href="regions/west-africa.html">West Africa</a></li>
-        <li><a href="regions/east-africa.html">East Africa</a></li>
+  <header style="background-color: #333; color: white; padding: 20px 0; text-align: center;">
+    <h1 style="margin: 0;">Tastes of Africa</h1>
+    <nav>
+      <ul style="list-style: none; display: flex; justify-content: center; gap: 20px; padding: 0; margin-top: 10px;">
+        <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="recipes/jollof.html" style="color: white; text-decoration: none;">Recipes</a></li>
+        <li><a href="regions/west-africa.html" style="color: white; text-decoration: none;">Regions</a></li>
+        <li><a href="about.html" style="color: white; text-decoration: none;">About</a></li>
+        <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
       </ul>
-    </li>
+    </nav>
+  </header>
 
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+  <main style="max-width: 900px; margin: auto; padding: 20px;">
 
-</header>
+    <section class="hero" style="margin-bottom: 40px;">
+      <img src="images/African-Cuisine.jpg" alt="Delicious African meal" 
+           style="width: 100%; max-width: 600px; display: block; margin: 0 auto 20px; border-radius: 10px;">
+      <h2 style="text-align: center;">Welcome to the vibrant world of African cuisine!</h2>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/0OWEqSbX1Us"
+              title="Top 10 African Dishes That You Must Try" frameborder="0" allowfullscreen
+              style="display: block; margin: 20px auto; max-width: 600px; border-radius: 10px;">
+      </iframe>
+    </section>
 
-<main>
-  <section class="hero">
-    <img src="images/African-Cuisine.jpg" alt="Delicious African meal">
-    <h2>Welcome to the vibrant world of African cuisine!</h2>
-    <iframe src="https://www.youtube.com/embed/0OWEqSbX1Us" title="Top 10 African Dishes That You Must Try"></iframe>
-  </section>
+    <section class="featured-dishes" style="margin-bottom: 40px;">
+      <h2>Featured Dishes</h2>
 
-  <section class="featured-dishes">
-    <h2>Featured Dishes</h2>
+      <figure style="margin-bottom: 20px;">
+        <img src="images/jollof-rice.jpg" alt="Jollof Rice"
+             style="width: 100%; max-width: 600px; border-radius: 10px; display: block; margin-bottom: 10px;">
+        <figcaption>
+          <a href="recipes/jollof.html">Jollof Rice</a> - A beloved West African dish made with rice, tomatoes, and spices.
+        </figcaption>
+      </figure>
 
-    <figure>
-      <img src="images/jollof-rice.jpg" alt="Jollof Rice">
-      <figcaption>
-        <a href="recipes/jollof.html">Jollof Rice</a> - A beloved West African dish made with rice, tomatoes, and spices.
-      </figcaption>
-    </figure>
+      <figure style="margin-bottom: 20px;">
+        <img src="images/mandazi.jpg" alt="Mandazi"
+             style="width: 100%; max-width: 600px; border-radius: 10px; display: block; margin-bottom: 10px;">
+        <figcaption>
+          <a href="recipes/mandazi.html">Mandazi</a> - Sweet, fluffy East African doughnuts often enjoyed with tea.
+        </figcaption>
+      </figure>
 
-    <figure>
-      <img src="images/mandazi.jpg" alt="Mandazi"> style="max-width: 300px; height: auto; border-radius: 10px;">
+      <figure>
+        <img src="images/ugali.jpg" alt="Ugali"
+             style="width: 100%; max-width: 600px; border-radius: 10px; display: block; margin-bottom: 10px;">
+        <figcaption>
+          <a href="recipes/ugali.html">Ugali</a> - A staple maize flour dish served across East Africa.
+        </figcaption>
+      </figure>
+    </section>
 
-      <figcaption>
-        <a href="recipes/mandazi.html">Mandazi</a> - Sweet, fluffy East African doughnuts often enjoyed with tea.
-      </figcaption>
-    </figure>
+    <section class="regions" style="margin-bottom: 40px; background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
+      <h2>Explore by Region</h2>
+      <ul style="padding-left: 20px;">
+        <li style="margin-bottom: 20px;">
+          <a href="regions/west-africa.html"><strong>West Africa</strong></a>
+          <p>Known for bold flavors and dishes like <mark>Jollof Rice</mark> and Suya, this region celebrates spicy stews and grilled meats.</p>
+        </li>
+        <li>
+          <a href="regions/east-africa.html"><strong>East Africa</strong></a>
+          <p>Featuring unique breads like <mark>Injera</mark> and staples such as Ugali, East African cuisine blends indigenous and Indian influences.</p>
+        </li>
+      </ul>
+    </section>
 
-    <figure>
-      <img src="images/ugali.jpg" alt="Ugali">
-      <figcaption>
-        <a href="recipes/ugali.html">Ugali</a> - A staple maize flour dish served across East Africa.
-      </figcaption>
-    </figure>
-  </section>
+    <section class="trends" style="margin-bottom: 40px;">
+      <h2>Latest Food Trends</h2>
 
-  <section class="regions">
-    <h2>Explore by Region</h2>
-    <ul>
-      <li>
-        <a href="regions/west-africa.html"><strong>West Africa</strong></a>
-        <p>Known for bold flavors and dishes like <mark>Jollof Rice</mark> and Suya, this region celebrates spicy stews and grilled meats.</p>
-      </li>
-      <li>
-        <a href="regions/east-africa.html"><strong>East Africa</strong></a>
-        <p>Featuring unique breads like <mark>Injera</mark> and staples such as Ugali, East African cuisine blends indigenous and Indian influences.</p>
-      </li>
-    </ul>
-  </section>
+      <article style="margin-bottom: 20px;">
+        <h3>Modern twist on <mark>African Cuisine</mark></h3>
+        <p>Chefs are adding ancient grains like <mark>quinoa</mark> and <mark>teff</mark> to traditional African recipes for a healthy fusion.</p>
+        <time datetime="2023-10-15">October 15, 2023</time>
+      </article>
 
-  <section class="trends">
-    <h2>Latest Food Trends</h2>
+      <article>
+        <h3>Chefs Push <mark>Injera</mark> to the World Menu</h3>
+        <p>East African flatbread <mark>Injera</mark> is being reimagined in fusion restaurants around the globe. Read more in 
+          <a href="https://www.theeastafrican.co.ke/tea/magazine/chefs-push-african-cuisine-to-world-menu-4804792" target="_blank">this article</a>.
+        </p>
+        <time datetime="2023-11-03">November 3, 2023</time>
+      </article>
+    </section>
+  </main>
 
-    <article>
-      <h3>Modern twist on <mark>African Cuisine</mark></h3>
-      <p>Chefs are adding ancient grains like <mark>quinoa</mark> and <mark>teff</mark> to traditional African recipes for a healthy fusion.</p>
-      <time datetime="2023-10-15">October 15, 2023</time>
-    </article>
+  <footer style="background-color: #eee; padding: 20px; text-align: center;">
+    <form style="margin-bottom: 10px;">
+      <label for="newsletter">Subscribe to our newsletter:</label>
+      <input type="email" id="newsletter" placeholder="Enter your email">
+      <button type="submit">Subscribe</button>
+    </form>
+    <p>&copy; 2025 Tastes of Africa</p>
+  </footer>
 
-    <article>
-      <h3>Chefs Push <mark>Injera</mark> to the World Menu</h3>
-      <p>East African flatbread <mark>Injera</mark> is being reimagined in fusion restaurants around the globe. Read more in 
-        <a href="https://www.theeastafrican.co.ke/tea/magazine/chefs-push-african-cuisine-to-world-menu-4804792" target="_blank">this article</a>.
-      </p>
-      <time datetime="2023-11-03">November 3, 2023</time>
-    </article>
-  </section>
-</main>
-
-<footer>
-  <form>
-    <label for="newsletter">Subscribe to our newsletter:</label>
-    <input type="email" id="newsletter" placeholder="Enter your email">
-    <button type="submit">Subscribe</button>
-  </form>
-  <p>&copy; 2025 Tastes of Africa</p>
-</footer>
+</body>
+</html>
