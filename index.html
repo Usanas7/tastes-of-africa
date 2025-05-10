@@ -3,224 +3,237 @@
 <head>
   <meta charset="UTF-8">
   <title>Tastes of Africa</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <style>
-    /* General reset */
-    * {
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      line-height: 1.6;
     }
 
-    /* Header Styling */
     header {
-      background-color: #333;
+      background-color: #2c3e50;
       color: white;
-      padding: 20px 0;
-      text-align: center;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 0;
-    }
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-size: 16px;
-    }
-
-    /* Main Section */
-    main {
-      max-width: 900px;
-      margin: auto;
       padding: 20px;
     }
 
-    /* Hero Section */
+    header h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      background: white;
+      color: black;
+      top: 100%;
+      left: 0;
+      list-style: none;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li ul li a {
+      color: #333;
+      padding: 5px 10px;
+      display: block;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 20px;
+    }
+
     .hero img {
-      width: 100%;
+      max-width: 100%;
       height: auto;
-      max-width: 600px;
-      margin: 0 auto 20px;
       border-radius: 10px;
     }
 
     .hero iframe {
-      width: 100%;
-      height: 315px;
+      width: 80%;
+      height: 400px;
+      margin-top: 20px;
+      border: none;
       border-radius: 10px;
-      margin: 20px 0;
     }
 
-    /* Featured Dishes */
+    .featured-dishes {
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
     .featured-dishes figure {
-      margin-bottom: 20px;
+      margin: 20px 0;
+      text-align: center;
     }
 
     .featured-dishes img {
-      width: 100%;
+      max-width: 300px;
       height: auto;
-      max-width: 600px;
       border-radius: 10px;
-      display: block;
-      margin-bottom: 10px;
     }
 
-    .featured-dishes figcaption {
-      text-align: center;
-    }
-
-    /* Region Section */
-    .regions ul {
-      list-style: none;
-      padding-left: 20px;
-    }
-
-    .regions li {
-      margin-bottom: 20px;
-    }
-
-    .regions a {
-      font-weight: bold;
-      color: #333;
-      text-decoration: none;
-    }
-
-    .regions p {
-      font-size: 14px;
-      color: #555;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #eee;
+    .regions, .trends {
       padding: 20px;
+    }
+
+    .regions ul, .trends article {
+      margin-top: 10px;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
       text-align: center;
+      padding: 20px;
     }
 
     footer form {
       margin-bottom: 10px;
     }
 
-    footer input {
-      padding: 10px;
-      width: 250px;
-      margin-right: 10px;
+    input[type="email"] {
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
     }
 
-    footer button {
-      padding: 10px;
-      cursor: pointer;
-      background-color: #333;
-      color: white;
+    button[type="submit"] {
+      padding: 8px 12px;
+      background: #e67e22;
       border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Tastes of Africa</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li style="position: relative;">
-          <a href="#">Recipes</a>
-          <ul>
-            <li><a href="recipes/jollof.html">Jollof</a></li>
-            <li><a href="recipes/ugali.html">Ugali</a></li>
-            <li><a href="recipes/mandazi.html">Mandazi</a></li>
-          </ul>
-        </li>
-        <li style="position: relative;">
-          <a href="#">Regions</a>
-          <ul>
-            <li><a href="regions/west-africa.html">West Africa</a></li>
-            <li><a href="regions/east-africa.html">East Africa</a></li>
-          </ul>
-        </li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <h1>Tastes of Africa</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
 
-  <main>
-    <section class="hero">
-      <img src="images/African-Cuisine.jpg" alt="Delicious African meal">
-      <h2>Welcome to the vibrant world of African cuisine!</h2>
-      <iframe src="https://www.youtube.com/embed/0OWEqSbX1Us" title="Top 10 African Dishes That You Must Try"></iframe>
-    </section>
+      <li>
+        <a href="#">Recipes</a>
+        <ul>
+          <li><a href="recipes/jollof.html">Jollof</a></li>
+          <li><a href="recipes/ugali.html">Ugali</a></li>
+          <li><a href="recipes/mandazi.html">Mandazi</a></li>
+        </ul>
+      </li>
 
-    <section class="featured-dishes">
-      <h2>Featured Dishes</h2>
+      <li>
+        <a href="#">Regions</a>
+        <ul>
+          <li><a href="regions/west-africa.html">West Africa</a></li>
+          <li><a href="regions/east-africa.html">East Africa</a></li>
+        </ul>
+      </li>
 
-      <figure>
-        <img src="images/jollof-rice.jpg" alt="Jollof Rice">
-        <figcaption>
-          <a href="recipes/jollof.html">Jollof Rice</a> - A beloved West African dish made with rice, tomatoes, and spices.
-        </figcaption>
-      </figure>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-      <figure>
-        <img src="images/mandazi.jpg" alt="Mandazi">
-        <figcaption>
-          <a href="recipes/mandazi.html">Mandazi</a> - Sweet, fluffy East African doughnuts often enjoyed with tea.
-        </figcaption>
-      </figure>
+<main>
+  <section class="hero">
+    <img src="images/African-Cuisine.jpg" alt="Delicious African meal">
+    <h2>Welcome to the vibrant world of African cuisine!</h2>
+    <iframe src="https://www.youtube.com/embed/0OWEqSbX1Us" title="Top 10 African Dishes That You Must Try"></iframe>
+  </section>
 
-      <figure>
-        <img src="images/ugali.jpg" alt="Ugali">
-        <figcaption>
-          <a href="recipes/ugali.html">Ugali</a> - A staple maize flour dish served across East Africa.
-        </figcaption>
-      </figure>
-    </section>
+  <section class="featured-dishes">
+    <h2>Featured Dishes</h2>
 
-    <section class="regions">
-      <h2>Explore by Region</h2>
-      <ul>
-        <li>
-          <a href="regions/west-africa.html"><strong>West Africa</strong></a>
-          <p>Known for bold flavors and dishes like <mark>Jollof Rice</mark> and Suya, this region celebrates spicy stews and grilled meats.</p>
-        </li>
-        <li>
-          <a href="regions/east-africa.html"><strong>East Africa</strong></a>
-          <p>Featuring unique breads like <mark>Injera</mark> and staples such as Ugali, East African cuisine blends indigenous and Indian influences.</p>
-        </li>
-      </ul>
-    </section>
+    <figure>
+      <img src="images/jollof-rice.jpg" alt="Jollof Rice">
+      <figcaption>
+        <a href="recipes/jollof.html">Jollof Rice</a> - A beloved West African dish made with rice, tomatoes, and spices.
+      </figcaption>
+    </figure>
 
-    <section class="trends">
-      <h2>Latest Food Trends</h2>
+    <figure>
+      <img src="images/mandazi.jpg" alt="Mandazi" style="max-width: 300px; height: auto; border-radius: 10px;">
+      <figcaption>
+        <a href="recipes/mandazi.html">Mandazi</a> - Sweet, fluffy East African doughnuts often enjoyed with tea.
+      </figcaption>
+    </figure>
 
-      <article>
-        <h3>Modern twist on <mark>African Cuisine</mark></h3>
-        <p>Chefs are adding ancient grains like <mark>quinoa</mark> and <mark>teff</mark> to traditional African recipes for a healthy fusion.</p>
-        <time datetime="2023-10-15">October 15, 2023</time>
-      </article>
+    <figure>
+      <img src="images/ugali.jpg" alt="Ugali">
+      <figcaption>
+        <a href="recipes/ugali.html">Ugali</a> - A staple maize flour dish served across East Africa.
+      </figcaption>
+    </figure>
+  </section>
 
-      <article>
-        <h3>Chefs Push <mark>Injera</mark> to the World Menu</h3>
-        <p>East African flatbread <mark>Injera</mark> is being reimagined in fusion restaurants around the globe. Read more in 
-          <a href="https://www.theeastafrican.co.ke/tea/magazine/chefs-push-african-cuisine-to-world-menu-4804792" target="_blank">this article</a>.
-        </p>
-        <time datetime="2023-11-03">November 3, 2023</time>
-      </article>
-    </section>
-  </main>
+  <section class="regions">
+    <h2>Explore by Region</h2>
+    <ul>
+      <li>
+        <a href="regions/west-africa.html"><strong>West Africa</strong></a>
+        <p>Known for bold flavors and dishes like <mark>Jollof Rice</mark> and Suya, this region celebrates spicy stews and grilled meats.</p>
+      </li>
+      <li>
+        <a href="regions/east-africa.html"><strong>East Africa</strong></a>
+        <p>Featuring unique breads like <mark>Injera</mark> and staples such as Ugali, East African cuisine blends indigenous and Indian influences.</p>
+      </li>
+    </ul>
+  </section>
 
-  <footer>
-    <form>
-      <label for="newsletter">Subscribe to our newsletter:</label>
-      <input type="email" id="newsletter" placeholder="Enter your email">
-      <button type="submit">Subscribe</button>
-    </form>
-    <p>&copy; 2025 Tastes of Africa</p>
-  </footer>
+  <section class="trends">
+    <h2>Latest Food Trends</h2>
+
+    <article>
+      <h3>Modern twist on <mark>African Cuisine</mark></h3>
+      <p>Chefs are adding ancient grains like <mark>quinoa</mark> and <mark>teff</mark> to traditional African recipes for a healthy fusion.</p>
+      <time datetime="2023-10-15">October 15, 2023</time>
+    </article>
+
+    <article>
+      <h3>Chefs Push <mark>Injera</mark> to the World Menu</h3>
+      <p>East African flatbread <mark>Injera</mark> is being reimagined in fusion restaurants around the globe. Read more in 
+        <a href="https://www.theeastafrican.co.ke/tea/magazine/chefs-push-african-cuisine-to-world-menu-4804792" target="_blank">this article</a>.
+      </p>
+      <time datetime="2023-11-03">November 3, 2023</time>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <form>
+    <label for="newsletter">Subscribe to our newsletter:</label>
+    <input type="email" id="newsletter" placeholder="Enter your email">
+    <button type="submit">Subscribe</button>
+  </form>
+  <p>&copy; 2025 Tastes of Africa</p>
+</footer>
 
 </body>
 </html>
